@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="64dp"
+    android:paddingTop="16dp"
+    android:paddingRight="64dp"
+    android:paddingBottom="16dp"
+    tools:context="de.mapaco.stockwatcher.MainActivity">
+
+    <TextView
+        android:id="@+id/tvSearchTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/hint.wkn.search"
+        android:text=""
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorMapacoBlue" />
+
+    <Button
+        android:id="@+id/wknBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSearchTitle"
+        android:text="@string/msg.btn.wkn" />
+
+
+    <TextView
+        android:id="@+id/tvCurrentPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wknBtn"
+        android:background="@color/colorMapacoBlue"
+        android:gravity="center"
+        android:text=""
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorWhite" />
+
+    <!-- Trennlinie -->
+    <View
+        android:id="@+id/vSplit1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvCurrentPrice"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorMapacoBlue" />
+
+
+    <TextView
+        android:id="@+id/tvLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vSplit1"
+        android:gravity="center"
+        android:hint="@string/hint.wkn.limit"
+        android:text=""
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorMapacoBlue" />
+
+
+</RelativeLayout>
